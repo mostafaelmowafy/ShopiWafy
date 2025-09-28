@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useUser from "../authentication/useUser";
-import AccountInformationModal from "../profile/accountInformationModal";
+import AccountInformationModal from "../profile/AccountInformationModal";
 import useGetProfile from "../profile/useGetProfile";
 import Spinner from "../../ui/Spinner";
 import useGetCartItems from "./useGetCartItems";

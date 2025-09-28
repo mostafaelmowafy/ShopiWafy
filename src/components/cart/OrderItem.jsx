@@ -1,21 +1,10 @@
 import { Link } from "react-router-dom";
-import useUser from "../authentication/useUser";
-import useAddtoFavorites from "../Favorites/useAddtoFavorites";
-import useRemoveFromCart from "./useRemoveFromCart";
-import useUpdateCart from "./useUpdateCart";
 
 function OrderItem({ product }) {
-  const { id: idProduct, name, price, image_url } = product.products ?? {};
+  const { id: idProduct, name, image_url } = product.products ?? {};
 
-  const { user } = useUser();
-  const { id: userId } = user ?? {};
-
-  const {
-    price: productSizePrice,
-    sizes,
-    stock: quantitySizeStock,
-  } = product.product_variants ?? {};
-  const { id: idItemCart, quantity } = product;
+  const { price: productSizePrice, sizes } = product.product_variants ?? {};
+  const { quantity } = product;
   const total = quantity * productSizePrice;
 
   //   return (
