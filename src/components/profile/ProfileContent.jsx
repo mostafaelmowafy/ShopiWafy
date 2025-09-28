@@ -1,7 +1,7 @@
 import { HiOutlineHome } from "react-icons/hi";
 import useUser from "../authentication/useUser";
 import { FaRegEdit } from "react-icons/fa";
-import AccountInformationModal from "./accountInformationModal";
+import AccountInformationModal from "./AccountInformationModal";
 import useGetProfile from "./useGetProfile";
 import { GiCash } from "react-icons/gi";
 import Button from "../../ui/Button";
