@@ -1,5 +1,4 @@
-import ProfileContent from "../components/profile/profileContent";
-import Heading from "../ui/Heading";
+import ProfileContent from "../components/profile/ProfileContent";
 
 function Profile() {
   return <ProfileContent />;
